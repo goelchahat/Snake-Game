@@ -31,3 +31,23 @@ def home (x,y) :
     turtle.onscreenclick(start)
     turtle.mainloop()
 
+def window () :
+    turtle.onscreenclick(None)
+
+    window()
+
+    tfood = turtle.Turtle()
+    tfood.hideturtle()
+    tfood.pu()
+    tfood.speed(0)
+    tfood.shape("square")
+    tfood.color("red")
+
+    tscore = turtle.Turtle()
+    tscore.hideturtle()
+    tscore.pu()
+    tscore.speed(0)
+    tscore.goto(100, -250)
+    tscore.write("Score:" + str(a[0]), align="center", font=(10))
+    
+
